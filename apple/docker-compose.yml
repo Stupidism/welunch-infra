@@ -1,9 +1,7 @@
-#https://github.com/wmnnd/nginx-certbot/blob/master/docker-compose.yml
 version: '3'
 services:
-  apple:
-    image: registry.cn-hangzhou.aliyuncs.com/stupidism/welunch-apple
-    restart: unless-stopped
+  web:
+    build: ..
     ports:
       - "3000:3000"
 
